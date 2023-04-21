@@ -1,17 +1,11 @@
 #include <stdio.h>
 
-int main(int c, int i, int li, int lli, int f)
+int main(void)
 {
-	c=sizeof(char);
-	i=sizeof(int);
-	li=sizeof(long int);
-	lli=sizeof(long long int);
-	f=sizeof(float);
-
-	printf("Size of a char: "&c" byte(s)");
-	printf("Size of an int: "&i" byte(s)");
-	printf("Size of a long int: "&li" byte(s)");
-	printf("Size of a long long int: "&lli" byte(s)");
-	printf("Size of a float: "&f" byte(s)");
+	printf("Size of a char: %zu byte(s)", sizeof(char));
+	printf("Size of an int: %zu byte(s)", sizeof(int));
+	printf("Size of a long int: %zu byte(s)", sizeof(long int));
+	printf("Size of a long long int: %zu byte(s)", sizeof(long long int));
+	printf("Size of a float: %zu byte(s)", sizeof(float));
 	return (0);
 }
