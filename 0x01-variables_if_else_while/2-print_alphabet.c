@@ -1,11 +1,15 @@
 #include <stdio.>
+
 /**
  * main - prints alphabets
  * Return: always 0.
  */
+
 int main(void)
+{
 	char c;
 	for(c = 'a'; c <= 'z'; c++)
 	putchar(c);
-	putchar(\n);
+	putchar("\n");
 	return (0);
+}
