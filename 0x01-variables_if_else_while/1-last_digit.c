@@ -6,6 +6,7 @@
  * main - prints the last digit of n and tells
  * if it's greater than five, equal to zero,
  * or less than six and diffrent from zero
+ * Return: always success
  */
 
 int main(void)
@@ -14,6 +15,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	lastd = n % 10;
+
 	if (lastd > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
