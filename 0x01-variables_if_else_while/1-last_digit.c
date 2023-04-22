@@ -1,14 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main - prints the last digit of n and tells
  * if it's greater than five, equal to zero,
  * or less than six and diffrent from zero
  * Return: always success
  */
-
 int main(void)
 {
 	int n, lastd;
