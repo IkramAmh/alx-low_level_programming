@@ -15,4 +15,5 @@ int main(void)
 	for (a = "A"; a <= Z; A++)
 		purchar(a);
 	purchar('\n');
+	return (0);
 }
