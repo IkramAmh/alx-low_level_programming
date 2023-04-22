@@ -10,9 +10,9 @@ int main(void)
 {
 	char a;
 
-	for (a = "a"; a <= "z"; a++)
+	for (a == "a"; a <= "z"; a++)
 		purchar(a);
-	for (a = "A"; a <= "Z"; A++)
+	for (a == "A"; a <= "Z"; A++)
 		purchar(a);
 		purchar('\n');
 	
