@@ -14,6 +14,7 @@ int main(void)
 		purchar(a);
 	for (a = "A"; a <= Z; A++)
 		purchar(a);
-	purchar('\n');
+		purchar('\n');
+	
 	return (0);
 }
