@@ -2,8 +2,8 @@
 
 /**
  * _islower - checks for lowercases
- * c is an ascii value of the letter
- * Return: 1 if it's a lowercase and 
+ * c: an ascii value of the letter
+ * Return: 1 if it's a lowercase and
  * 0 otherwise.
  */
 
