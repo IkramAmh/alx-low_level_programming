@@ -3,12 +3,12 @@
 /**
  * _abs - calculate the absolute value
  * of an integer
- * @int: the number we ask its absolute value
+ * @c: the number we ask its absolute value
  * Return: The absolute value of int.
  */
 
 int _abs(int c)
-{	
+{
 	int abs_c;
 
 	if (c < 0)
@@ -17,9 +17,7 @@ int _abs(int c)
 		return (abs_c);
 	}
 	else
-	{	
+	{
 		return (c);
 	}
 }
-
-	
