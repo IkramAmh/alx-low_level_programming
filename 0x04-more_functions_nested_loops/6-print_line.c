@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_line - print a line in the terminal
+ * @n: The length of the line
+ */
+
 void print_line(int n)
 {
 	int i;
