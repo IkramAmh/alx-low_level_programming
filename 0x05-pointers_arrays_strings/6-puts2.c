@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts - prints even numbers
+ * puts2 - prints half strings
  * @str: The number to be checked
  */
 
