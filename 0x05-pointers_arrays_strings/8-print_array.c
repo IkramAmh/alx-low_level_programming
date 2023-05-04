@@ -17,12 +17,15 @@ void print_array(int *a, int n)
 	{
 		j++;
 	}
-	for (i = 0; i < n - 1; i++)
+	if (j > 0)
 	{
-		printf("%d, ", a[i]);
+		for (i = 0; i < j; i++)
+		{
+			printf("%d, ", a[i]);
+		}
 	}
-	if (i == n - 1 && n > 0)
+	else
 	{
-		printf("%d\n", a[i]);
+		printf("%d\n", a[j]);
 	}
 }
