@@ -4,6 +4,7 @@
  * _strcat - prints twoo concatenated strings
  * @dest: The first string where to add the second
  * @src: The string to be added
+ * Return: The concatenated string.
  */
 
 char *_strcat(char *dest, char *src)
