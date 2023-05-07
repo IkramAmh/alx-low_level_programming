@@ -22,18 +22,6 @@ int _strcmp(char *s1, char *s2)
 			}
 			else
 			{
-				do
-				{
-					i++;
-					n = s1[i] - s2[i];
-				}
-				while (n == 0);
-				if (n != 0)
-				{
-				}
-				else
-				{
-				}
 			}
 		}
 	}
