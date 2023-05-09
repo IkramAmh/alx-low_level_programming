@@ -4,7 +4,8 @@
  * _memcpy - copies n bytes of src to dest
  * @dest: The array where to paste n bytes
  * @src: The array from where n bytes are copied
- * Return: The new dest
+ * @n: The number of bytes to be copied
+ * Return: The new dest.
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
