@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * sqrt - checks the input number from i to n
+ * _sqrt - checks the input number from i to n
  * @i: The starter
  * @n: The base
  * Return: The value of i.
