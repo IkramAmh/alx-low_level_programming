@@ -22,7 +22,7 @@ int _prime(int i, int n)
 	return (_prime(i + 1, n));
 }
 /**
- * is _prime_number - checks if n is q prime number
+ * is_prime_number - checks if n is q prime number
  * @n: The number to check
  * Return: either n is prime or not.
  */
