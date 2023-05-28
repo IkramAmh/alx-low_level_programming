@@ -4,7 +4,7 @@
 /**
  * main - prints the program's name
  * @argc: the parameter giving the number of args
- * @argv[]: The pointer to program's arguments
+ * @argv: The pointer to program's arguments
  * Return: always successful.
  */
 
