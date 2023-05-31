@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 				tot = tot + atoi(argv[i]);
 			}
 		}
-	printf("%d\n", tot);
+		printf("%d\n", tot);
 	}
 	return (0);
 }
