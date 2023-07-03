@@ -1,1 +1,1 @@
-main function arguments
+main arguments

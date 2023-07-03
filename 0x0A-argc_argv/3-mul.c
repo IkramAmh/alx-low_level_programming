@@ -3,26 +3,25 @@
 #include "main.h"
 
 /**
- * main - prints the product of two numbers
- * @argc: The number of arguments
- * @argv: The pointer to main's arguments
- * Return: 0 if successful 1 otherwise.
+ * main - calculate the product of two integers
+ * argc: The number of arguments
+ * argv: arguments passed into the function
+ * Return: 0 if success 1 otherwise
  */
 
 int main(int argc, char *argv[])
 {
 	int prod;
 
-	if (argc < 2)
+	if (argc > 1)
+	{
+		prod = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", prod);
+		return(0);
+	}
+	else
 	{
 		printf("Error\n");
-		return (1);
+		return(1);
 	}
-	else if (argc > 3)
-	{
-		return (1);
-	}
-	prod = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", prod);
-	return (0);
 }
