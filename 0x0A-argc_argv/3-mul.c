@@ -3,11 +3,12 @@
 #include "main.h"
 
 /**
- * main - calculate the product of two integers
+ * main() - calculate the product of two integers
  * argc: The number of arguments
  * argv: arguments passed into the function
  * Return: 0 if success 1 otherwise.
  */
+
 int main(int argc, char *argv[])
 {
 	int prod;
