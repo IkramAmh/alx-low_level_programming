@@ -11,17 +11,14 @@ int main(int argc, char *argv[])
 {
 	int a, b, prod;
 
-	if (argc > 1 && argc <= 3)
-	{
-		sscanf(argv[1], "%d", &a);
-		sscanf(argv[2], "%d", &b);
-		prod = a * b;
-		printf("%d\n", prod);
-		return (0);
-	}
-	else
+	if (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	sscanf(argv[1], "%d", &a);
+	sscanf(argv[2], "%d", &b);
+	prod = a * b;
+	printf("%d\n", prod);
+	return (0);
 }
