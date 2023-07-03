@@ -8,14 +8,14 @@
  * Return: 0 if success 1 otherwise.
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int a, b, prod;
 
 	if (argc > 1 && argc <= 3)
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
+		a = (int)*argv[1];
+		b = (int)*argv[2];
 		prod = a * b;
 		printf("%d\n", prod);
 		return(0);
