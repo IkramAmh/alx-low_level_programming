@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - calculate the product of two integers
+ * main - calculates the product of two integers
  * @argc: The number of arguments
  * @argv: arguments passed into the function
  * Return: 0 if success 1 otherwise.
@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b, prod;
+	int a, b, p;
 
 	if (argc < 3)
 	{
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	}
 	sscanf(argv[1], "%d", &a);
 	sscanf(argv[2], "%d", &b);
-	prod = a * b;
-	printf("%d\n", prod);
+	p = a * b;
+	printf("%d\n", p);
 	return (0);
 }
