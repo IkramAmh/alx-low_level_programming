@@ -29,12 +29,15 @@ int test(char *s, int len, int i)
 	if (i <= len)
 	{
 		return (1);
+		if (s[len] == s[i])
+		{
+			return (test(s, len - 1, i));
+		}
 	}
-	if (s[len] == s[i])
+	else
 	{
-		return (test(s, len - 1, i));
+		return (0);
 	}
-	return (0);
 }
 /**
  * is_palindrome - testes if a string is a palindrome
@@ -48,4 +51,5 @@ int is_palindrome(char *s)
 	int i = 0;
 
 	return (test(s, len - 1, i));
+
 }
