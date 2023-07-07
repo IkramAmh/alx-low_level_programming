@@ -26,7 +26,7 @@ int str_len(char *s)
 
 int test(char *s, int len, int i)
 {
-	if (i >= len)
+	if (i <= len)
 	{
 		return (1);
 	}
