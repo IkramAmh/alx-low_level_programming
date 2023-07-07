@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - calculate the product of two integers
@@ -6,6 +7,7 @@
  * @argv: arguments passed into the function
  * Return: 0 if success 1 otherwise.
  */
+
 int main(int argc, char *argv[])
 {
 	int a, b, prod;
@@ -19,5 +21,5 @@ int main(int argc, char *argv[])
 	sscanf(argv[2], "%d", &b);
 	prod = a * b;
 	printf("%d\n", prod);
-	return(0);
+	return (0);
 }
