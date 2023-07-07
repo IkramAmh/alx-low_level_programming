@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("Error\n");
-		return(1);
+		return (1);
 	}
 	sscanf(argv[1], "%d", &a);
 	sscanf(argv[2], "%d", &b);
