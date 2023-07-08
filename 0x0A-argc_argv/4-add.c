@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		if (atoi(argv[i]) > 0)
+		if (atoi(argv[i]) >= 0)
 		{
 			sum = sum + atoi(argv[i]);
 		}
