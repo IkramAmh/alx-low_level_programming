@@ -17,9 +17,12 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	sscanf(argv[1], "%d", &a);
-	sscanf(argv[2], "%d", &b);
-	p = a * b;
-	printf("%d\n", p);
+	else
+	{
+		sscanf(argv[1], "%d", &a);
+		sscanf(argv[2], "%d", &b);
+		p = a * b;
+		printf("%d\n", p);
+	}
 	return (0);
 }
