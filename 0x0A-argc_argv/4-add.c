@@ -13,23 +13,25 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	for (i = 1; i < argc; i++)
+	if (argc < 2)
 	{
-		if (argc < 2)
-		{
-			printf("0\n");
-			return (1);
-		}
-		if (*argv[i] < 48 || *argv[i] > 58)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		if (atoi(argv[i]) >= 0)
-		{
-			sum = sum + atoi(argv[i]);
-		}
+		printf("0\n");
 	}
-	printf("%d\n", sum);
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			if (*argv[i] < 48 || *argv[i] > 58)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			if (atoi(argv[i]) >= 0)
+			{
+				sum = sum + atoi(argv[i]);
+			}
+		}
+		printf("%d\n", sum);
+	}
 	return (0);
 }
