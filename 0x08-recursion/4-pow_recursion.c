@@ -2,9 +2,9 @@
 
 /**
  * _pow_recursion - calculates the value of x raised to y
- * @x= the value to multiply
+ * @x: the value to multiply
  * @y: the power
- * Return: the result/
+ * Return: the result.
  */
 
 int _pow_recursion(int x, int y)
