@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
  * calculator - finds the square root of a number b
  * @n: the square root
  * @b: the base number
- * return: The result.
+ * Return: The result.
  */
 
 int calculator(int n, int b)
