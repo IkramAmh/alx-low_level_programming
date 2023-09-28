@@ -23,13 +23,13 @@ int _sqrt_recursion(int n)
 
 int calculator(int n, int b)
 {
-        if (n * n == b)
-        {
-                return (n);
-        }
-        if ((n * n > b) || (n <= 0))
-        {
-                return (-1);
-        }
-        return (calculator(n + 1, b));
+	if (n * n == b)
+	{
+		return (n);
+	}
+	if ((n * n > b) || (n <= 0))
+	{
+		return (-1);
+	}
+	return (calculator(n + 1, b));
 }
