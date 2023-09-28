@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts_recursion : reads the content of an array
+ * _puts_recursion - reads the content of an array
  * @s: the array to be printed
  * Return: nothing
  */
