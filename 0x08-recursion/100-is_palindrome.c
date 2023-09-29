@@ -11,10 +11,10 @@ int strcomp(char *s, int i, int l);
 
 int is_palindrome(char *s)
 {
-        int l;
+	int l;
 
-        l = palength(s);
-        return (strcomp(s, 0, l));
+	l = palength(s);
+	return (strcomp(s, 0, l));
 }
 
 /**
@@ -35,6 +35,7 @@ int palength(char *s)
 /**
  * strcomp - compares the characters of the string
  * @s: the string to check
+ * @i: a counter
  * @l: the string's length
  * Return: 1 if true 0 otherwise.
  */
@@ -45,6 +46,7 @@ int strcomp(char *s, int i, int l)
 	{
 		return (0);
 	}
-	return (1);
-	return (strcomp(s + 1, i + 1, l - 1));
+	if (i > l / 2)
+		return (1);
+	return (strcomp(s, i + 1, l - 1));
 }
