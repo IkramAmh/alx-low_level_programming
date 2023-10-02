@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - sums up the arguments
@@ -10,19 +11,18 @@
 
 int main(int argc, char *argv[])
 {
-	int x, y, prod;
+	int x, y;
 
-	if (argc < 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
 	if (argc == 3)
 	{
-		sscanf(argv[1], "%d", &x);
-		sscanf(argv[2], "%d", &y);
-		prod = x * y;
-		printf("%d\n", prod);
+		x = atoi(argv[1]);
+		y = atoi(argv[2]);
+		printf("%d\n", x * y);
 	}
+	else
+        {
+                printf("Error\n");
+                return (1);
+        }
 	return (0);
 }
