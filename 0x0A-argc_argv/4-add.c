@@ -15,10 +15,6 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (argc == 0)
-		{
-			printf("0\n");
-		}
 		if (*argv[i] < 47 || *argv[i] > 57)
 		{
 			printf("Error\n");
@@ -28,6 +24,10 @@ int main(int argc, char *argv[])
 		if (x >= 0)
 		{
 			sum += x;
+		}
+		else
+		{
+			printf("0\n");
 		}
 	}
 	printf("%d\n", sum);
