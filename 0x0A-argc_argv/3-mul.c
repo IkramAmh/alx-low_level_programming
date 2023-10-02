@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int x, y;
+	int x, y, prod;
 
 	if (argc < 2)
 	{
@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 	}
 	sscanf(argv[1], "%d", &x);
 	sscanf(argv[2], "%d", &y);
-	printf("%d\n", x * y);
+	prod = x * y;
+	printf("%d\n", prod);
 	return (0);
 }
