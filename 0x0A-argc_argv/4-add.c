@@ -11,7 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i, x, sum = 0;
+	int i, x; 
+	unsigned int sum = 0;
 
 	if (argc > 1)
 	{
