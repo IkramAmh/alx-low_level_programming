@@ -4,6 +4,7 @@
 
 /**
  * free_grid - frees a two dimentional grid
+ * @grid: a pointer of the array of integers
  * @height: the height of the grid
  * Return: Nothing.
  */
