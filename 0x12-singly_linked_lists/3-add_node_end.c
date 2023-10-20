@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
 
-char *_strdup(const char *str)char *_strdup(const char *str)
+char *_strdup(const char *str);
 
 /**
  * add_node_end - function with two arguments
@@ -41,7 +41,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	else
 		*head = end_node;
-		return (end_node);
+	return (end_node);
 }
 
 /**
