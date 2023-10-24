@@ -3,21 +3,22 @@
 /**
  * print_listint_safe - Prints a linked list
  * @head: Pointer to a struct
- *
- * Return: Number of nodes in list
+ * Return: Number of nodes in list.
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t c = 0;
 
-	if (head != NULL)
+	if (head == NULL)
 	{
-		while (head && head > head->next)
-		{
-			printf("[%p] %d\n", (void *)head, head->n);
-			head = head->next;
-			++c;
-		}
+		exit (98);
+	}
+	while (head && head > head->next)
+	{
+		printf("[%p] %d\n", (void *)head, head->n);
+		head = head->next;
+		++c;
 	}
 	if (head)
 	{
