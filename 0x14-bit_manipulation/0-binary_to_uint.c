@@ -11,16 +11,16 @@ unsigned int power(unsigned int n);
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n = 0, decimal = 0, weight = 0;
-	unsigned int len = *(&b + 1) - b, i = len - 1;
+	unsigned int m = 0, decimal = 0, weight = 0;
+	unsigned int len = *(&b + 1) - b, i;
 
 	while (i <= len - 1)
 	{
 		if (*b != '0' || *b != '1' || b == NULL)
 			return (0);
-		n = power(weight) * (unsigned int) b[i];
-		decimal+=n;
-		i--;
+		m = power(weight) * (unsigned int) b[i];
+		decimal+=m;
+		--i;
 		weight++;
 	}
 	return (decimal);
