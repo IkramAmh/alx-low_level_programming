@@ -26,6 +26,12 @@ unsigned int binary_to_uint(const char *b)
 	return (decimal);
 }
 
+/**
+ * power - calculate the number 2 rised to a power n
+ * &n: the power
+ * Return: 2 power of n.
+ */
+
 unsigned int power(unsigned int n)
 {
 	if (n == 0)
