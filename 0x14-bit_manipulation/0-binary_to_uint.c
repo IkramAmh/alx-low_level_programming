@@ -12,7 +12,7 @@ unsigned int power(unsigned int n);
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal = 0, weight = 0;
-	unsigned i, len = *(&b + 1) - b;
+	unsigned int i, len = *(&b + 1) - b;
 
 	while (i <= len - 1)
 	{
