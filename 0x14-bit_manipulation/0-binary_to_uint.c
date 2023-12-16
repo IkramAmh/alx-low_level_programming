@@ -1,4 +1,7 @@
+#include <stdlib.h>
 #include "main.h"
+
+unsigned int power(unsigned int n);
 
 /**
  * binary_to_uint - convert binary string to decimal
@@ -8,17 +11,26 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decimal;
-	unsigned int i;
+	unsigned int decimal = 0, weight = 0;
+	unsigned i, len = *(&b + 1) - b;
 
-	for (decimal = 0, i = 0; b[i] != '\0'; i++)
+	while (i <= len - 1)
 	{
-		if (b[i] == '1')
-			decimal = (decimal << 1) | 1;
-		else if (b[i] == '0')
-			decimal <<= 1;
-		else if (b[i] != '0' && b[i] != '1')
+		if (*b != '0' || *b != '1' || b == NULL)
 			return (0);
+		decimal = power(weight) * (unsigned int) b[i];
+		decimal++;
+		i--;
+		weight++;
 	}
 	return (decimal);
+}
+
+unsigned int power(unsigned int n)
+{
+	if (n == 0)
+		return (1);
+	if (n == 1)
+		return (2);
+	return (2 * power(n / 2));
 }
