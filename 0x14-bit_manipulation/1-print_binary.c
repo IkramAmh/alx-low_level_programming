@@ -2,7 +2,7 @@
 
 /**
  * print_binary - converts a number to its binary format
- * &n: the number to convert
+ * @n: the number to convert
  * Return: Nothing.
  */
 
