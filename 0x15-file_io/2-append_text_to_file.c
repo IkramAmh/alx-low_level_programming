@@ -27,7 +27,7 @@ int length(char *s)
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fp;
-	ssize_t bytes, len = length(text_content);
+	ssize_t bytes = 0, len = length(text_content);
 
 	if (!filename)
 		return (-1);
