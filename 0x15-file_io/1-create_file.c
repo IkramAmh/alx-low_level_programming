@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * length - returns the length of a string
  * @s: the string to check
@@ -13,7 +12,7 @@ int length(char *s)
 
 	if (!s)
 		return (0);
-	while(*s++)
+	while (*s++)
 		i++;
 	return (i);
 }
