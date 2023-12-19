@@ -38,5 +38,5 @@ int main(int ac, char *av[])
 		dprintf(STDERR_FILENO, "Error: Can't close fc %d\n", fc_from), exit(100);
 	if (close(fc_to) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fc %d\n", fc_to), exit(100);
-	return (0);
+	return (EXIT_SUCCESS);
 }
