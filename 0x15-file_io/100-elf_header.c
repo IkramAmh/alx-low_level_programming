@@ -84,7 +84,7 @@ void print_version(Elf64_Ehdr h)
 }
 
 /**
- * print-osabi - prints Elf OS/ABI
+ * print_osabi - prints Elf osabi
  * @h: the ELF header struct
  */
 
@@ -228,7 +228,7 @@ void print_entry(Elf64_Ehdr h)
 		i = 0;
 		len = h.e_ident[EI_CLASS] == ELFCLASS64 ? 7 : 3;
 
-		while(!p[i])
+		while (!p[i])
 			i++;
 		printf("%x", p[i++]);
 		for (; i <= len; i++)
@@ -258,7 +258,8 @@ int main(int argc, char **av)
 	b = read(fp, &h, sizeof(h));
 	if (b < 1 || b != sizeof(h))
 		dprintf(STDERR_FILENO, "Can't read from file %s\n", av[1]), exit(98);
-	if (h.e_ident[0] == 0x7f && h.e_ident[1] == 'E' && h.e_ident[2] == 'L' && h.e_ident[3] == 'F')
+	if (h.e_ident[0] == 0x7f && h.e_ident[1] == 'E' && h.e_ident[2] == 'L' &&
+			h.e_ident[3] == 'F')
 	{
 		printf("ELF_Header:\n");
 	}
