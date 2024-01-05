@@ -18,7 +18,7 @@ int main(int ac, char *av[])
 	fc_from = open(av[1], O_RDONLY);
 	if (fc_from == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
-	fc_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, permessions);
+	fc_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, permessions);
 	if (fc_to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	rd_stat = 1;
