@@ -30,7 +30,7 @@ int main(int ac, char *av[])
 		if (rd_stat > 0)
 		{
 			wr_stat = write(fc_to, buf, rd_stat);
-			if (wr_stat != rd_stat || wr_stat == -1)
+			if ((wr_stat != rd_stat) || (wr_stat == -1))
 				dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 		}
 	}
