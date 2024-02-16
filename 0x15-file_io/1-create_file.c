@@ -31,7 +31,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (!filename)
 		return (-1);
-	fd = open(filename, O_WRONLY | O_TRUNC | O_CREAT, 600);
+	fd = open(filename, O_RDWR | O_TRUNC | O_CREAT, S_IRUSR | S_IWUSR);
 	if (fd == -1)
 		return (-1);
 	if (len)
