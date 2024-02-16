@@ -8,7 +8,7 @@
 
 ssize_t _strlen(char *s)
 {
-	int i;
+	int i = 0;
 
 	if (!s)
 		return (0);
@@ -27,17 +27,15 @@ ssize_t _strlen(char *s)
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	ssize_t wr;
-	char buf[READ_BUF_SIZE * 8];
-	ssize_t len = _strlen(text_content);
+	ssize_t wr, len = _strlen(text_content);
 
 	if (!filename)
 		return (-1);
-	fd = open(filename, O_WRONLY | O_TRUNC | O_CREAT, S_IRUSR | S_IWUSR);
+	fd = open(filename, O_WRONLY | O_TRUNC | O_CREAT, 600);
 	if (fd == -1)
 		return (-1);
 	if (len)
-		wr = write(fd, &buf[0], len);
+		wr = write(fd, text_content, len);
 	close (fd);
 	return (wr == len ? 1 : -1);
 }
