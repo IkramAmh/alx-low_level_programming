@@ -9,7 +9,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd = open(filename, O_RDONLY);
+	int fd = open(filename, O_RDONLY, 777);
 	ssize_t count;
 	char buf[READ_BUF_SIZE * 8];
 
@@ -24,4 +24,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fd);
 	return (count);
 }
-
