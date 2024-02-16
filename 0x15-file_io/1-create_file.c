@@ -14,7 +14,7 @@ ssize_t _strlen(char *s)
 		return (0);
 	while (*s++)
 		i++;
-	return(i);
+	return (i);
 }
 
 /**
