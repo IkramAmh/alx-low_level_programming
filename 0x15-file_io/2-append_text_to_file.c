@@ -1,6 +1,6 @@
 #include "main.h"
 
-#define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWUSR | S_IROTH)
+#define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 
 /**
  * _strlen -  measures the length of a string
