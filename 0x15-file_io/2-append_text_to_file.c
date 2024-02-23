@@ -1,7 +1,5 @@
 #include "main.h"
 
-#define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
-
 /**
  * _strlen -  measures the length of a string
  * @s: the string to measure
@@ -33,7 +31,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (!filename)
 		return (-1);
-	fd = open(filename, O_WRONLY | O_APPEND, PERMISSIONS);
+	fd = open(filename, O_WRONLY | O_APPEND);
 	if (fd == -1)
 		return (-1);
 	while (len)
